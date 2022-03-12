@@ -2,6 +2,13 @@
 
 using namespace std;
 
+struct box
+{
+  int height;
+  int width;
+  int length;
+}(box1,box2);
+
 int volume(int height, int width, int length);
 
 // 1. Define a structure called Box
@@ -18,11 +25,11 @@ int main() {
     
     // 4. Input the height, width, lenght of box1 and box2
     cout << "Enter Box 1 Height : ";
-    cin >> Height of Box 1;
+    cin >> Height of box1.height ;
     cout << "Enter Box 1 Width : ";
-    cin >> Width of Box 1;
+    cin >> Width of box1.width ;
     cout << "Enter Box 1 Length : ";
-    cin >> Length of Box 1;
+    cin >> Length of box1.length;
     
     cout << "Enter Box 2 Height : ";
     cin >> Height of Box 2;
@@ -39,5 +46,8 @@ int main() {
     
     return 0;
 }
-
+int volume(int height, int width, int length)
+{
+  return height*width*length;
+}
 // Implement the functions here
